@@ -70,12 +70,6 @@ to support NHPA's limited audit capacity allocation (3%, 5%, 7%).
 ### Gender × Age Group Interaction
 Audit rates range from 4.56%–5.30% across all 8 gender×age group combinations — variation is small and does not indicate any subgroup being notably over- or under-represented, except for the (L, 60+) combination, which shows a slightly lower audit rate (4.56%) compared to other combinations.
 
-## Limitations
-- There is an **upper bound on performance (irreducible error)** due to 1,737 identical feature combinations with differing labels, identified during EDA — a perfect NormalizedRecall@5% of 1.0 is not achievable with the available features.
-- **High cutoff sensitivity** at the 5% threshold — audit decisions for claims scoring near the cutoff are fairly susceptible to shifting with small model or data changes.
-- The audit disparity for the 60+ age group (-1.41%) warrants further investigation to confirm it reflects a reasonable clinical pattern rather than a feature limitation that inadvertently disadvantages this group.
-- The model does not use any external data, in compliance with the updated competition rules.
-
 ## Tools & Libraries
 Python 3.13, pandas, numpy, scikit-learn (RandomForestClassifier, StratifiedKFold), scipy (rankdata), matplotlib, seaborn.
 

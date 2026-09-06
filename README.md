@@ -75,7 +75,7 @@ Python 3.13, pandas, numpy, scikit-learn (RandomForestClassifier, StratifiedKFol
 
 ## Struktur Proyek
 ```
-DAC/
+DAC-2.0/
 ├── Dataset/{RawDataset, Processed}/
 ├── Notebooks/{01_EDA, 02_preprocessing, 03_modeling_randomforest,
 │              04_audit_allocation, 05_fairness_evaluation}.ipynb
